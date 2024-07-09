@@ -1,0 +1,31 @@
+.video-container {
+  width: 100%;
+  height: calc(100vh - 10vh);
+  /* 使用剩餘視窗高度填滿整個畫面 */
+  position: absolute;
+  top: 10vh;
+  /* 留出 navbar 的高度 */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe {
+  width: 84%;
+  /* 調整影片寬度 */
+  height: 84%;
+  /* 調整影片高度 */
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 白色邊框 */
+  box-shadow:
+    0 0 0 12px rgba(255, 255, 255, 0.7),
+    0 0 0 24px rgba(255, 255, 255, 0.5),
+    0 0 0 36px rgba(255, 255, 255, 0.3),
+    0 0 0 48px rgba(255, 255, 255, 0.1);
+  /* 增加間距的多重 box-shadow */
+}

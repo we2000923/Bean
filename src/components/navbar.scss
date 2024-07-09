@@ -1,0 +1,42 @@
+.navbar {
+  background-color: #000;
+  height: 10vh; /* 調整為你希望的高度 */
+  position: fixed; /* 固定在頂部 */
+  padding: 10px 0px 0px 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* 確保在其他元素之上 */
+}
+
+.navbar-brand {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff !important; /* 使用 !important 強制覆蓋其他可能的樣式 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: none; /* 禁用任何過渡效果 */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 18px;
+  color: #ccc;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:hover {
+  color: inherit; /* 保持原有顏色 */
+  background-color: transparent; /* 保持透明背景 */
+}
+
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:hover {
+  color: #fff !important; /* 確保懸停時顏色保持不變 */
+  background-color: transparent !important; /* 確保懸停時背景透明 */
+}
